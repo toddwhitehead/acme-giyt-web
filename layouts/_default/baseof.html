@@ -34,6 +34,23 @@
         nav h1 {
             font-size: 1.5rem;
         }
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .homepage-logo {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .full-logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
         nav ul {
             list-style: none;
             display: flex;
@@ -93,7 +110,9 @@
 <body>
     <header>
         <nav>
-            <h1>{{ .Site.Title }}</h1>
+            <a href="/" class="logo-link">
+                <img src="/images/site/giyt-logo-1.png" alt="{{ .Site.Title }}" class="logo">
+            </a>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>

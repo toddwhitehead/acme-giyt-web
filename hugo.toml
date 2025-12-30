@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.getinyourtree.com/'
 languageCode = 'en-us'
-title = 'ACME GIYT Web'
+title = 'ACME Get In Your Tree'
 
 [params]
-  description = 'Welcome to ACME GIYT Web'
-  author = 'ACME GIYT'
+  description = 'Welcome to home of get ACMEs Get In Your Tree initiative.'
+  author = 'ACME Inc'

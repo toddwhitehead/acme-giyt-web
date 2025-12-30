@@ -4,6 +4,10 @@
 <h1>Welcome to {{ .Site.Title }}</h1>
 <p>{{ .Site.Params.description }}</p>
 
+<div class="homepage-logo">
+    <img src="/images/site/giyt-logo-1.png" alt="{{ .Site.Title }}" class="full-logo">
+</div>
+
 <h2>Recent Posts</h2>
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
 {{ if $posts }}
