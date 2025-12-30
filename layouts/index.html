@@ -1,0 +1,24 @@
+{{ define "title" }}{{ .Site.Title }} - Home{{ end }}
+
+{{ define "main" }}
+<h1>Welcome to {{ .Site.Title }}</h1>
+<p>{{ .Site.Params.description }}</p>
+
+<h2>Recent Posts</h2>
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<ul class="content-list">
+    {{ range first 5 $posts }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+        {{ if .Summary }}
+        <p>{{ .Summary }}</p>
+        {{ end }}
+    </li>
+    {{ end }}
+</ul>
+{{ else }}
+<p>No posts yet. Check back soon!</p>
+{{ end }}
+{{ end }}

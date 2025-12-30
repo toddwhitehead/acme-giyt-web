@@ -1,0 +1,17 @@
+# Hugo build artifacts
+public/
+resources/_gen/
+
+# Temporary files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Hugo locks
+.hugo_build.lock

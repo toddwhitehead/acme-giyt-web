@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'ACME GIYT Web'
+
+[params]
+  description = 'Welcome to ACME GIYT Web'
+  author = 'ACME GIYT'
