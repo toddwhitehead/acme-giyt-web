@@ -1,0 +1,41 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'ACME GIYT Blog'
+theme = 'hugo-coder'
+
+[pagination]
+pagerSize = 10
+
+[params]
+  author = "ACME GIYT"
+  description = "ACME GIYT - Blog for sharing ideas and insights"
+  keywords = "blog,developer,personal"
+  info = ["Full Stack Developer", "Tech Enthusiast"]
+  avatarURL = "images/avatar.jpg"
+  dateFormat = "January 2, 2006"
+  since = 2025
+  
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "posts/"
+  [[menu.main]]
+    name = "About"
+    weight = 2
+    url = "about/"
