@@ -8,33 +8,39 @@
     <img src="/images/site/giyt-logo-1.png" alt="{{ .Site.Title }}" class="full-logo">
 </div>
 
-{{ with .Site.Taxonomies.categories }}
-<h2>Categories</h2>
-<ul class="content-list">
-    {{ range $name, $pages := . }}
-    <li>
-        <a href="/categories/{{ $name | urlize }}/">{{ $name | title }}</a>
-        <span class="date">({{ $pages.Count }} posts)</span>
-    </li>
-    {{ end }}
-</ul>
-{{ end }}
-
-<h2>Recent Posts</h2>
-{{ $posts := where .Site.RegularPages "Section" "posts" }}
-{{ if $posts }}
-<ul class="content-list">
-    {{ range first 5 $posts }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
-        {{ if .Summary }}
-        <p>{{ .Summary }}</p>
+<div class="home-layout">
+    <div class="home-main">
+        <h2>Recent Posts</h2>
+        {{ $posts := where .Site.RegularPages "Section" "posts" }}
+        {{ if $posts }}
+        <ul class="content-list">
+            {{ range first 5 $posts }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+                {{ if .Summary }}
+                <p>{{ .Summary }}</p>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        {{ else }}
+        <p>No posts yet. Check back soon!</p>
         {{ end }}
-    </li>
-    {{ end }}
-</ul>
-{{ else }}
-<p>No posts yet. Check back soon!</p>
-{{ end }}
+    </div>
+
+    <aside class="home-sidebar">
+        {{ with .Site.Taxonomies.categories }}
+        <h2>Categories</h2>
+        <ul class="content-list">
+            {{ range $name, $pages := . }}
+            <li>
+                <a href="/categories/{{ $name | urlize }}/">{{ $name | title }}</a>
+                <span class="date">({{ $pages.Count }} posts)</span>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </aside>
+</div>
 {{ end }}
