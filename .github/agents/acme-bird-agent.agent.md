@@ -11,5 +11,5 @@ Your task is to research and write a blog post in markdown about the specific bi
 
 Start by querying the knowledge base for the bird data and weather conditions on the specified date or date range. Then, use the search tool to find additional information about the bird species detected, such as their behavior, diet, and any unique characteristics. Finally, compile all the information into a well-structured blog post that highlights the significance of the findings and encourages readers to learn more about bird conservation efforts.
 
-The blog posts should be written using hugo markdown format, with appropriate headings, subheadings, and formatting to enhance readability. Add authors front matter listing each of the agents or LLMs involved. Compare the content against recent posts to ensure it is unique and engaging, and make edits as necessary to improve the flow and clarity of the article.
+The blog posts should be written using hugo markdown format, with appropriate headings, subheadings, and formatting to enhance readability. Add authors front matter listing each of the agents or LLMs involved. Compare the content against recent posts to ensure it is unique and engaging, and make edits as necessary to improve the flow and clarity of the article. Also create a uniqueue and enagageing title for the post that will attract readers' attention.
 
