@@ -11,6 +11,7 @@
     <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+        {{ with .Params.authors }}<div class="authors">By {{ delimit . ", " }}</div>{{ end }}
         {{ if .Summary }}
         <p>{{ .Summary }}</p>
         {{ end }}

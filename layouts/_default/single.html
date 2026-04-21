@@ -4,6 +4,7 @@
 <article>
     <h1>{{ .Title }}</h1>
     <div class="date">{{ .Date.Format "January 2, 2006" }}</div>
+    {{ with .Params.authors }}<div class="authors">By {{ delimit . ", " }}</div>{{ end }}
     <div class="content">
         {{ .Content }}
     </div>
