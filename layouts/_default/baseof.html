@@ -35,12 +35,21 @@
             font-size: 1.5rem;
         }
         .logo {
-            height: 40px;
+            height: 80px;
             width: auto;
         }
         .logo-link {
             text-decoration: none;
             color: inherit;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .site-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ecf0f1;
+            letter-spacing: 0.02em;
         }
         .homepage-logo {
             text-align: center;
@@ -195,6 +204,7 @@
         <nav>
             <a href="/" class="logo-link">
                 <img src="/images/site/giyt-logo-1.png" alt="{{ .Site.Title }}" class="logo">
+                <span class="site-title">Get in Your Tree</span>
             </a>
             <ul>
                 <li><a href="/">Home</a></li>
