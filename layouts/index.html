@@ -8,6 +8,18 @@
     <img src="/images/site/giyt-logo-1.png" alt="{{ .Site.Title }}" class="full-logo">
 </div>
 
+{{ with .Site.Taxonomies.categories }}
+<h2>Categories</h2>
+<ul class="content-list">
+    {{ range $name, $pages := . }}
+    <li>
+        <a href="/categories/{{ $name | urlize }}/">{{ $name | title }}</a>
+        <span class="date">({{ $pages.Count }} posts)</span>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+
 <h2>Recent Posts</h2>
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
 {{ if $posts }}

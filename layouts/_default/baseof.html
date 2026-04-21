@@ -200,6 +200,9 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
                 <li><a href="/posts/">Posts</a></li>
+                {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                <li><a href="/categories/{{ $name | urlize }}/">{{ $name | title }}</a></li>
+                {{ end }}
             </ul>
         </nav>
     </header>
