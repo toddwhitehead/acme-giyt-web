@@ -2,8 +2,8 @@
 title: "Wile E. Coyote Leadership Exercise Pack"
 date: 2026-02-07
 type: "leadership"
-categories: ["tools"]
-tags: ["exercises", "leadership-development"]
+categories: ["framework"]
+tags: ["leadership-development"]
 component: "exercise-pack"
 summary: "A complete set of exercises for applying the leadership framework."
 draft: false

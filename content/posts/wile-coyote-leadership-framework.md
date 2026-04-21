@@ -3,7 +3,7 @@ title: "Wile E. Coyote Leadership Framework"
 date: 2026-02-07
 type: "leadership"
 categories: ["framework"]
-tags: ["leadership", "resilience", "systems-thinking"]
+tags: ["leadership"]
 summary: "A leadership model inspired by Wile E. Coyote’s resilience and systems mindset."
 draft: false
 ---

@@ -2,7 +2,7 @@
 title: "Wile E. Coyote Leadership Workshop"
 date: 2026-02-07
 type: "workshop"
-categories: ["leadership", "training"]
+categories: ["framework"]
 tags: ["workshop", "team-development"]
 duration: "Half-day"
 audience: ["Leaders", "Facilitators", "Teams"]

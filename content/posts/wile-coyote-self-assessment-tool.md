@@ -2,7 +2,7 @@
 title: "Wile E. Coyote Leadership Self‑Assessment"
 date: 2026-02-07
 type: "leadership"
-categories: ["tools"]
+categories: ["framework"]
 tags: ["assessment", "leadership"]
 component: "self-assessment"
 summary: "A self‑assessment aligned to the Wile E. Coyote Leadership Framework."
