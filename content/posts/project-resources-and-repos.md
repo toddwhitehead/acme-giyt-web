@@ -1,7 +1,7 @@
 ---
 title: "Project Resources"
 date: 2026-02-11
-categories: ["tools"]
+categories: ["resources"]
 tags: ["resources", "repositories", "IoT", "AI", "bird-detection"]
 summary: "A central directory of all project repositories, with descriptions and links to get started."
 draft: false
